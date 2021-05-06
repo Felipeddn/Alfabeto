@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<!-- para estudar react https://www.youtube.com/watch?v=y2FYZWC4Cac&list=PLXik_5Br-zO9YVs9bxi7zoQlKq59VPTX1&index=9 -->
+
+<head>
+	<style>
+		html {
+			margin: 0px;
+			padding: 0px;
+			/*border-box: box-sizing;*/
+		}
+
+		body {
+			margin: 0px;
+			padding: 0px;
+			/*border-box: box-sizing;*/
+		}
+
+		section {
+			margin: 0px;
+			padding: 0px;
+			/*border-box: box-sizing;*/
+		}
+
+		h1 {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#biel {
+			/*background: #ff0000;*/
+			background: rgb(0, 0, 0);
+			color: white;
+			font-family: arial;
+			font-size: 20px;
+			/*border: 10px white solid;*/
+		}
+
+		#lipe {
+			/*background: yellow;*/
+			background: rgb(0, 0, 0);
+			color: white;
+			font-size: 20px;
+			border: 0px white solid;
+		}
+
+		#lima {
+			/*background: orange;*/
+			background: rgb(0, 0, 0);
+			color: white;
+			font-size: 20px;
+			border: 0px white solid;
+		}
+
+		.letra {
+			background: rgb(0, 0, 0);
+			color: white;
+			font-size: 20px;
+			border: 0px white solid;
+		}
+
+		button {
+			item-align: center;
+		}
+
+		#res {
+			font-size: 60px;
+			text-align: center;
+		}
+	</style>
+
+</head>
+
+<body>
+	<section id="biel" style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'>
+		<h1>OI Biel</h1>
+
+	</section>
+	<section id='lipe' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'>
+		<h1>OI Felipe</h1>
+
+	</section>
+	<section id='lima' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'>
+		<h1>OI Lima</h1>
+
+	</section>
+	<section id='lima' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'>
+		<h1>OI Ana</h1>
+
+	</section>
+	</section>
+	<section class='letra' style='height: 20vh;' onmouseenter='tocarLetra(this)' onmousemove='letraMaior(this)'
+		onmouseout='letraMenor(this)'>
+		<h1>A</h1>
+		<audio>
+			<source src="./biel_alfabeto/A_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>B</h1>
+		<audio>
+			<source src="./biel_alfabeto/B_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>C</h1>
+		<audio>
+			<source src="./biel_alfabeto/C_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>D</h1>
+		<audio>
+			<source src="./biel_alfabeto/D_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>E</h1>
+		<audio>
+			<source src="./biel_alfabeto/E_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>F</h1>
+		<audio>
+			<source src="./biel_alfabeto/F_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>G</h1>
+		<audio>
+			<source src="./biel_alfabeto/G_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>H</h1>
+		<audio>
+			<source src="./biel_alfabeto/H_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>I</h1>
+		<audio>
+			<source src="./biel_alfabeto/I_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>J</h1>
+		<audio>
+			<source src="./biel_alfabeto/J_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>K</h1>
+		<audio>
+			<source src="./biel_alfabeto/K_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>L</h1>
+		<audio>
+			<source src="./biel_alfabeto/L_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>M</h1>
+		<audio>
+			<source src="./biel_alfabeto/M_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>N</h1>
+		<audio>
+			<source src="./biel_alfabeto/N_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>O</h1>
+		<audio>
+			<source src="./biel_alfabeto/O_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>P</h1>
+		<audio>
+			<source src="./biel_alfabeto/P_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>Q</h1>
+		<audio>
+			<source src="./biel_alfabeto/Q_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>R</h1>
+		<audio>
+			<source src="./biel_alfabeto/R_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>S</h1>
+		<audio>
+			<source src="./biel_alfabeto/S_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>T</h1>
+		<audio>
+			<source src="./biel_alfabeto/T_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>U</h1>
+		<audio>
+			<source src="./biel_alfabeto/U_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>V</h1>
+		<audio>
+			<source src="./biel_alfabeto/V_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>W</h1>
+		<audio>
+			<source src="./biel_alfabeto/W_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>X</h1>
+		<audio>
+			<source src="./biel_alfabeto/X_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>Y</h1>
+		<audio>
+			<source src="./biel_alfabeto/Y_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+	<section class='letra' style='height: 20vh;' onmousemove='letraMaior(this)' onmouseout='letraMenor(this)'
+		onmouseenter='tocarLetra(this)'>
+		<h1>Z</h1>
+		<audio>
+			<source src="./biel_alfabeto/Z_Biel.wav" type="audio/wav">
+		</audio>
+	</section>
+
+
+	<script>
+		function tocarLetra(element) {
+			element.children[1].play();
+		};
+
+		// function mostrar() {
+		// 	alert("Gabriel")
+		// };
+
+		// function soma() {
+		// 	let n1 = document.getElementById('n1');
+		// 	let n2 = document.getElementById('n2');
+		// 	let res = document.getElementById('res');
+		// 	let resultado = Number(n1.value) + Number(n2.value)
+		// 	return res.innerHTML = resultado;
+		// };
+
+		function letraMaior(element) {
+			element.style.fontSize = '200px';
+			element.style.backgroundColor = 'rgb(200, 200, 200)'
+			element.style.border = '10px yellow solid'
+			element.style.color = 'rgb(5, 5, 255)';
+			element.style.height = '40vh';
+			element.style.textAlign = 'center';
+		}
+		function letraMenor(element) {
+			element.style.fontSize = '20px';
+			element.style.border = '0px white solid'
+			element.style.backgroundColor = 'rgb(0, 0, 0)'
+			element.style.color = 'white';
+			element.style.height = '20vh';
+			element.style.textAlign = 'left';
+		}
+	</script>
+
+</body>
+
+</html>
